@@ -1,7 +1,11 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "paths": {
+      "@y-ui/core": ["../core/dist/index.d.ts"],
+      "@y-ui/core/*": ["../core/dist/*"]
+    }
   },
   "include": ["src"]
 }

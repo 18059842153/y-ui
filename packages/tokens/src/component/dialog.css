@@ -1,0 +1,14 @@
+:root {
+  /* ── Dialog ── */
+  --y-dialog-overlay-bg: rgba(0, 0, 0, 0.45);
+  --y-dialog-mask-bg: transparent;
+  --y-dialog-header-padding: var(--y-space-6);
+  --y-dialog-title-size: var(--y-text-lg);
+  --y-dialog-title-weight: var(--y-font-semibold);
+  --y-dialog-close-size: var(--y-text-xl);
+  --y-dialog-close-color: var(--y-color-text-muted);
+  --y-dialog-close-color-hover: var(--y-color-text);
+  --y-dialog-body-padding: var(--y-dialog-padding);
+  --y-dialog-footer-padding: var(--y-space-4) var(--y-space-6);
+  --y-dialog-footer-border: var(--y-color-border);
+}

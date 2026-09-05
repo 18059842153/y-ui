@@ -13,5 +13,5 @@ export default defineConfig({
       external: ['@y-ui/core'],
     },
   },
-  plugins: [dts()],
+  plugins: [dts({ skipDiagnostics: true, include: ['src'] })],
 })

@@ -1,0 +1,10 @@
+:root {
+  /* ── Tabs ── */
+  --y-tabs-nav-border: var(--y-color-border);
+  --y-tabs-tab-radius: var(--y-radius-4);
+  --y-tabs-card-bg: var(--y-color-bg-subtle);
+  --y-tabs-card-bg-active: var(--y-color-bg);
+  --y-tabs-segment-bg: var(--y-color-bg-muted);
+  --y-tabs-segment-bg-active: var(--y-color-bg);
+  --y-tabs-segment-radius: var(--y-radius-6);
+}

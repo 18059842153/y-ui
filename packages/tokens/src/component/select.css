@@ -1,0 +1,32 @@
+:root {
+  /* ── Select ── */
+  --y-select-bg: var(--y-input-bg);
+  --y-select-border: var(--y-input-border);
+  --y-select-border-focus: var(--y-input-border-focus);
+  --y-select-text: var(--y-input-text);
+  --y-select-placeholder: var(--y-input-placeholder);
+  --y-select-radius: var(--y-input-radius);
+  --y-select-padding-x: var(--y-input-padding-x);
+  --y-select-padding-y: var(--y-input-padding-y);
+  --y-select-font-size: var(--y-input-font-size);
+  --y-select-dropdown-bg: var(--y-color-bg);
+  --y-select-dropdown-shadow: var(--y-shadow-lg);
+  --y-select-dropdown-radius: var(--y-radius-4);
+  --y-select-option-bg-hover: var(--y-color-bg-subtle);
+  --y-select-option-bg-active: var(--y-color-primary-light);
+  --y-select-option-text: var(--y-color-text);
+
+  /* ── Tabs ── */
+  --y-tabs-text: var(--y-color-text-secondary);
+  --y-tabs-text-active: var(--y-color-primary);
+  --y-tabs-border: var(--y-color-border);
+  --y-tabs-indicator: var(--y-color-primary);
+  --y-tabs-indicator-width: 2px;
+  --y-tabs-bg-hover: var(--y-color-bg-subtle);
+  --y-tabs-bg-active: var(--y-color-bg);
+  --y-tabs-font-size: var(--y-text-sm);
+  --y-tabs-font-size-lg: var(--y-text-base);
+  --y-tabs-padding-x: var(--y-space-4);
+  --y-tabs-padding-y: var(--y-space-2);
+  --y-tabs-gap: var(--y-space-6);
+}
