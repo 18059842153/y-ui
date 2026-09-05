@@ -1,0 +1,19 @@
+{
+  "name": "@y-ui/tokens",
+  "version": "0.1.0",
+  "description": "Design tokens: CSS custom properties for colors, spacing, typography, animations",
+  "type": "module",
+  "main": "./dist/global.css",
+  "exports": {
+    "./global.css": "./dist/global.css",
+    "./semantic.css": "./dist/semantic.css",
+    "./animations.css": "./dist/animations.css",
+    "./component/*": "./dist/component/*"
+  },
+  "files": ["dist"],
+  "sideEffects": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "clean": "rm -rf dist"
+  }
+}

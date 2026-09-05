@@ -1,0 +1,31 @@
+{
+  "name": "@y-ui/hooks",
+  "version": "0.1.0",
+  "description": "Framework-agnostic headless hook interface definitions",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@y-ui/core": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.3.0",
+    "typescript": "^5.5.0"
+  }
+}

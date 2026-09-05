@@ -1,0 +1,94 @@
+:root {
+  /* ── Colors ── */
+  --y-blue-50: #eff6ff;
+  --y-blue-100: #dbeafe;
+  --y-blue-200: #bfdbfe;
+  --y-blue-300: #93c5fd;
+  --y-blue-400: #60a5fa;
+  --y-blue-500: #3b82f6;
+  --y-blue-600: #2563eb;
+  --y-blue-700: #1d4ed8;
+  --y-blue-800: #1e40af;
+  --y-blue-900: #1e3a8a;
+
+  --y-gray-50: #f9fafb;
+  --y-gray-100: #f3f4f6;
+  --y-gray-200: #e5e7eb;
+  --y-gray-300: #d1d5db;
+  --y-gray-400: #9ca3af;
+  --y-gray-500: #6b7280;
+  --y-gray-600: #4b5563;
+  --y-gray-700: #374151;
+  --y-gray-800: #1f2937;
+  --y-gray-900: #111827;
+  --y-gray-950: #030712;
+
+  --y-red-50: #fef2f2;
+  --y-red-100: #fee2e2;
+  --y-red-500: #ef4444;
+  --y-red-600: #dc2626;
+  --y-red-700: #b91c1c;
+
+  --y-green-50: #f0fdf4;
+  --y-green-100: #dcfce7;
+  --y-green-500: #22c55e;
+  --y-green-600: #16a34a;
+
+  --y-yellow-50: #fefce8;
+  --y-yellow-100: #fef9c3;
+  --y-yellow-500: #eab308;
+  --y-yellow-600: #ca8a04;
+
+  /* ── Spacing ── */
+  --y-space-0: 0px;
+  --y-space-1: 4px;
+  --y-space-2: 8px;
+  --y-space-3: 12px;
+  --y-space-4: 16px;
+  --y-space-5: 20px;
+  --y-space-6: 24px;
+  --y-space-8: 32px;
+  --y-space-10: 40px;
+  --y-space-12: 48px;
+  --y-space-16: 64px;
+
+  /* ── Border Radius ── */
+  --y-radius-none: 0px;
+  --y-radius-2: 2px;
+  --y-radius-4: 4px;
+  --y-radius-6: 6px;
+  --y-radius-8: 8px;
+  --y-radius-12: 12px;
+  --y-radius-16: 16px;
+  --y-radius-full: 9999px;
+
+  /* ── Typography ── */
+  --y-font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --y-font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --y-text-xs: 0.75rem;
+  --y-text-sm: 0.875rem;
+  --y-text-base: 1rem;
+  --y-text-lg: 1.125rem;
+  --y-text-xl: 1.25rem;
+  --y-text-2xl: 1.5rem;
+  --y-text-3xl: 1.875rem;
+
+  --y-leading-tight: 1.25;
+  --y-leading-normal: 1.5;
+  --y-leading-relaxed: 1.75;
+
+  --y-font-normal: 400;
+  --y-font-medium: 500;
+  --y-font-semibold: 600;
+  --y-font-bold: 700;
+
+  /* ── Z-Index ── */
+  --y-z-dropdown: 1000;
+  --y-z-sticky: 1020;
+  --y-z-fixed: 1030;
+  --y-z-modal-backdrop: 1040;
+  --y-z-modal: 1050;
+  --y-z-popover: 1060;
+  --y-z-tooltip: 1070;
+}

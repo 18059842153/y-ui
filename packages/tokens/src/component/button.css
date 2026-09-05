@@ -1,0 +1,38 @@
+:root {
+  /* ── Button ── */
+  --y-btn-bg: var(--y-color-primary);
+  --y-btn-bg-hover: var(--y-color-primary-hover);
+  --y-btn-bg-active: var(--y-color-primary-active);
+  --y-btn-text: var(--y-color-text-inverse);
+  --y-btn-radius: var(--y-radius-4);
+  --y-btn-padding-x: var(--y-space-4);
+  --y-btn-padding-y: var(--y-space-2);
+  --y-btn-font-size: var(--y-text-sm);
+  --y-btn-font-weight: var(--y-font-medium);
+  --y-btn-border-width: 1px;
+
+  /* ── Input ── */
+  --y-input-bg: var(--y-color-bg);
+  --y-input-border: var(--y-color-border);
+  --y-input-border-focus: var(--y-color-border-focus);
+  --y-input-text: var(--y-color-text);
+  --y-input-placeholder: var(--y-color-text-muted);
+  --y-input-radius: var(--y-radius-4);
+  --y-input-padding-x: var(--y-space-3);
+  --y-input-padding-y: var(--y-space-2);
+  --y-input-font-size: var(--y-text-sm);
+
+  /* ── Dialog ── */
+  --y-dialog-bg: var(--y-color-bg);
+  --y-dialog-radius: var(--y-radius-12);
+  --y-dialog-shadow: var(--y-shadow-xl);
+  --y-dialog-padding: var(--y-space-6);
+  --y-dialog-max-width: 32rem;
+
+  /* ── Card ── */
+  --y-card-bg: var(--y-color-bg);
+  --y-card-border: var(--y-color-border);
+  --y-card-radius: var(--y-radius-8);
+  --y-card-shadow: var(--y-shadow-sm);
+  --y-card-padding: var(--y-space-4);
+}

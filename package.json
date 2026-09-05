@@ -1,0 +1,28 @@
+{
+  "name": "y-ui-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Cross-framework lightweight component library",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "compile": "tsx scripts/compile.ts",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "turbo": "^2.3.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.1.0"
+  }
+}
