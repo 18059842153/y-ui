@@ -1,0 +1,54 @@
+/*
+ * RTL overrides for components that cannot use CSS logical properties.
+ * Most layout should use logical properties (margin-inline-start, etc.)
+ * which are inherently direction-aware. This file handles edge cases
+ * like transforms, specific icon flips, and directional animations.
+ */
+
+[dir="rtl"] {
+  /* Flip directional icons */
+  .y-icon--chevron-left,
+  .y-icon--chevron-right,
+  .y-icon--arrow-left,
+  .y-icon--arrow-right {
+    transform: scaleX(-1);
+  }
+
+  /* Tabs: reverse arrow key navigation hint */
+  .y-tabs__tab {
+    text-align: right;
+  }
+
+  /* Select dropdown arrow */
+  .y-select__arrow {
+    transform: scaleX(-1);
+  }
+
+  /* Dialog close button position */
+  .y-dialog__close {
+    inset-inline-start: auto;
+    inset-inline-end: var(--y-dialog-padding, 16px);
+  }
+
+  /* Input clear button */
+  .y-input__clear {
+    inset-inline-start: var(--y-input-padding-x, 12px);
+    inset-inline-end: auto;
+  }
+
+  /* Input prefix/suffix swap */
+  .y-input__prefix {
+    inset-inline-start: var(--y-input-padding-x, 12px);
+    inset-inline-end: auto;
+  }
+
+  .y-input__suffix {
+    inset-inline-end: var(--y-input-padding-x, 12px);
+    inset-inline-start: auto;
+  }
+
+  /* Card extra slot (top-right → top-left in RTL) */
+  .y-card__extra {
+    text-align: start;
+  }
+}

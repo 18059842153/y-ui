@@ -65,6 +65,51 @@
     to { transform: scale(1); opacity: 1; }
   }
 
+  @keyframes y-scale-out {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(0.95); opacity: 0; }
+  }
+
+  @keyframes y-slide-in-from-left {
+    from { transform: translateX(-10px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  @keyframes y-slide-in-from-right {
+    from { transform: translateX(10px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  @keyframes y-slide-out-to-top {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-10px); opacity: 0; }
+  }
+
+  @keyframes y-slide-out-to-bottom {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(10px); opacity: 0; }
+  }
+
+  @keyframes y-slide-out-to-left {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(-10px); opacity: 0; }
+  }
+
+  @keyframes y-slide-out-to-right {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(10px); opacity: 0; }
+  }
+
+  @keyframes y-collapse-down {
+    from { grid-template-rows: 0fr; }
+    to { grid-template-rows: 1fr; }
+  }
+
+  @keyframes y-collapse-up {
+    from { grid-template-rows: 1fr; }
+    to { grid-template-rows: 0fr; }
+  }
+
   /* ── Reduced Motion ── */
   @media (prefers-reduced-motion: reduce) {
     :root {

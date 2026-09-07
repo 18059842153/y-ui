@@ -65,6 +65,7 @@
       aria-labelledby={title ? 'y-dialog-title' : undefined}
       style={dialogStyle}
       on:click|stopPropagation
+      on:keydown|stopPropagation
     >
       {#if title || closable}
         <div class="y-dialog__header">

@@ -9,7 +9,6 @@
     size?: 'sm' | 'md' | 'lg'
     error?: boolean
     getLabel?: (option: T) => string
-    getValue?: (option: T) => string
   }
 
   export let options: Props['options'] = []
@@ -19,7 +18,6 @@
   export let size: Props['size'] = 'md'
   export let error: Props['error'] = false
   export let getLabel: Props['getLabel'] = undefined
-  export let getValue: Props['getValue'] = undefined
 
   const dispatch = createEventDispatcher<{ change: any }>()
 
@@ -138,8 +136,10 @@
         <div
           role="option"
           aria-selected={currentValue === option}
+          tabindex="-1"
           class="y-select__option {highlightedIndex === index ? 'y-select__option--active' : ''}"
           on:click={() => handleSelect(option)}
+          on:keydown={(e) => e.key === 'Enter' && handleSelect(option)}
           on:mouseenter={() => (highlightedIndex = index)}
         >
           {getLabelFor(option)}

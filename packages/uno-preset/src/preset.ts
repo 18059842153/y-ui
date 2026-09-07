@@ -355,6 +355,32 @@ export function presetYui(options: PresetYuiOptions = {}): Preset {
         'whitespace-nowrap border-0',
         'clip-rect(0,0,0,0)',
       ].join(' '),
+
+      // ── Transition utilities ──
+      [`${prefix}-transition-enter`]: 'opacity-0',
+      [`${prefix}-transition-enter-active`]: [
+        'transition-all',
+        'duration-[var(--y-duration-normal)]',
+        'ease-[var(--y-ease-enter)]',
+      ].join(' '),
+      [`${prefix}-transition-enter-done`]: 'opacity-100',
+      [`${prefix}-transition-exit`]: 'opacity-100',
+      [`${prefix}-transition-exit-active`]: [
+        'transition-all',
+        'duration-[var(--y-duration-normal)]',
+        'ease-[var(--y-ease-exit)]',
+      ].join(' '),
+      [`${prefix}-transition-exit-done`]: 'opacity-0',
+
+      // ── Animation shortcuts ──
+      [`${prefix}-animate-fade-in`]: 'animate-[y-fade-in_var(--y-duration-normal)_var(--y-ease-enter)]',
+      [`${prefix}-animate-fade-out`]: 'animate-[y-fade-out_var(--y-duration-normal)_var(--y-ease-exit)]',
+      [`${prefix}-animate-scale-in`]: 'animate-[y-scale-in_var(--y-duration-normal)_var(--y-ease-enter)]',
+      [`${prefix}-animate-scale-out`]: 'animate-[y-scale-out_var(--y-duration-normal)_var(--y-ease-exit)]',
+      [`${prefix}-animate-slide-up`]: 'animate-[y-slide-in-from-bottom_var(--y-duration-normal)_var(--y-ease-enter)]',
+      [`${prefix}-animate-slide-down`]: 'animate-[y-slide-in-from-top_var(--y-duration-normal)_var(--y-ease-enter)]',
+      [`${prefix}-animate-collapse-down`]: 'animate-[y-collapse-down_var(--y-duration-normal)_var(--y-ease-enter)]',
+      [`${prefix}-animate-collapse-up`]: 'animate-[y-collapse-up_var(--y-duration-normal)_var(--y-ease-exit)]',
     },
 
     theme: {

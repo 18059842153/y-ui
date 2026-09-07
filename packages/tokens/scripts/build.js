@@ -9,7 +9,7 @@ const distDir = resolve(__dirname, '..', 'dist')
 mkdirSync(distDir, { recursive: true })
 mkdirSync(resolve(distDir, 'component'), { recursive: true })
 
-const cssFiles = ['global.css', 'semantic.css', 'animations.css']
+const cssFiles = ['global.css', 'semantic.css', 'animations.css', 'rtl.css']
 for (const file of cssFiles) {
   const content = readFileSync(resolve(srcDir, file), 'utf-8')
   writeFileSync(resolve(distDir, file), content)
