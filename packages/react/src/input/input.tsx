@@ -1,4 +1,5 @@
 import React, { forwardRef, useState, useCallback } from 'react'
+import { YIcon } from '../icon'
 
 export interface InputProps {
   type?: 'text' | 'password' | 'email' | 'number' | 'tel' | 'url' | 'search'
@@ -98,7 +99,7 @@ const YInput = forwardRef<HTMLInputElement, InputProps>(
             onClick={handleClear}
             aria-label="Clear"
           >
-            ×
+            <YIcon name="x" size={14} />
           </button>
         )}
         {suffix && <span className="y-input__suffix">{suffix}</span>}

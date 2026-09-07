@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue'
+import { YIcon } from '../icon'
 
 export interface SelectProps<T = any> {
   options: T[]
@@ -137,7 +138,7 @@ const classes = computed(() =>
         <span v-if="selectedLabel != null">{{ selectedLabel }}</span>
         <span v-else class="y-select__placeholder">{{ placeholder }}</span>
       </span>
-      <span class="y-select__arrow" aria-hidden="true">▾</span>
+      <span class="y-select__arrow" aria-hidden="true"><YIcon name="chevron-down" :size="16" /></span>
     </button>
     <div v-if="isOpen" class="y-select__dropdown" role="listbox">
       <div

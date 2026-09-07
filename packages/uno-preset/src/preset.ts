@@ -341,6 +341,38 @@ export function presetYui(options: PresetYuiOptions = {}): Preset {
         'animate-[y-bounce_1.4s_infinite]',
       ].join(' '),
 
+      // ── FormField ──
+      [`${prefix}-form-field`]: [
+        'flex flex-col gap-[var(--y-space-xs)]',
+        'mb-[var(--y-space-md)]',
+      ].join(' '),
+
+      [`${prefix}-form-field__label`]: [
+        'text-[var(--y-font-size-sm)]',
+        'font-[var(--y-font-weight-medium)]',
+        'text-[var(--y-color-text)]',
+        'leading-normal',
+      ].join(' '),
+
+      [`${prefix}-form-field__required`]: 'text-[var(--y-color-danger)] ms-[var(--y-space-xs)]',
+
+      [`${prefix}-form-field__hint`]: [
+        'text-[var(--y-font-size-xs)]',
+        'text-[var(--y-color-text-muted)]',
+        'leading-normal',
+      ].join(' '),
+
+      [`${prefix}-form-field__error`]: [
+        'text-[var(--y-font-size-xs)]',
+        'text-[var(--y-color-danger)]',
+        'leading-normal',
+      ].join(' '),
+
+      [`${prefix}-form-field--disabled`]: '',
+
+      // ── Icon ──
+      [`${prefix}-icon`]: 'inline-flex flex-shrink-0 align-middle',
+
       // ── Utilities ──
       [`${prefix}-collapse`]: [
         'grid',

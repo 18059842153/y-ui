@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { watch, onBeforeUnmount, ref, computed } from 'vue'
+import { YIcon } from '../icon'
 
 export interface DialogProps {
   open?: boolean
@@ -82,7 +83,7 @@ const dialogStyle = computed(() => {
           aria-label="Close"
           @click="handleClose"
         >
-          ×
+          <YIcon name="x" :size="16" />
         </button>
       </div>
       <div class="y-dialog__body">

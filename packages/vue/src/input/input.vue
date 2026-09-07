@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { YIcon } from '../icon'
 
 export interface InputProps {
   type?: 'text' | 'password' | 'email' | 'number' | 'tel' | 'url' | 'search'
@@ -87,7 +88,7 @@ const wrapperClasses = computed(() =>
       aria-label="Clear"
       @click="handleClear"
     >
-      ×
+      <YIcon name="x" :size="14" />
     </button>
     <span v-if="$slots.suffix" class="y-input__suffix">
       <slot name="suffix" />

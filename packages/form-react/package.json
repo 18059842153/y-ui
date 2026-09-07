@@ -1,0 +1,41 @@
+{
+  "name": "@y-ui/form-react",
+  "version": "0.1.0",
+  "description": "react-hook-form adapter for Y-UI React components",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@y-ui/form-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "react-hook-form": ">=7",
+    "@y-ui/react": "workspace:*"
+  },
+  "devDependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-hook-form": "^7.53.0",
+    "@y-ui/react": "workspace:*",
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.3.0",
+    "typescript": "^5.5.0"
+  }
+}

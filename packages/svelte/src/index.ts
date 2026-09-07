@@ -9,3 +9,7 @@ export { YDialog } from './dialog'
 export { YTabs } from './tabs'
 
 export { YCard } from './card'
+
+export { YIcon } from './icon'
+
+export { YFormField } from './form-field'

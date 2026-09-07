@@ -1,5 +1,6 @@
 <script lang="ts">
   import { createEventDispatcher, onMount, onDestroy } from 'svelte'
+  import { YIcon } from '../icon'
 
   interface Props {
     open?: boolean
@@ -79,7 +80,7 @@
               aria-label="Close"
               on:click={handleClose}
             >
-              ×
+              <YIcon name="x" size={16} />
             </button>
           {/if}
         </div>

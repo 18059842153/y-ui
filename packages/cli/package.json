@@ -1,0 +1,32 @@
+{
+  "name": "y-ui-cli",
+  "version": "0.1.0",
+  "description": "CLI tool for Y-UI component library — install components, manage config, and generate import maps",
+  "type": "module",
+  "bin": {
+    "y-ui": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "registry.json"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "picocolors": "^1.1.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/prompts": "^2.4.9",
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.3.0",
+    "typescript": "^5.5.0"
+  }
+}

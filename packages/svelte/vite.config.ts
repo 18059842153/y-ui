@@ -15,7 +15,7 @@ export default defineConfig({
       fileName: (_format, entryName) => `${entryName}.js`,
     },
     rollupOptions: {
-      external: ['svelte', 'svelte/internal', '@y-ui/core'],
+      external: ['svelte', 'svelte/internal', '@y-ui/core', '@y-ui/icons'],
       output: {
         preserveModules: true,
         preserveModulesRoot: 'src',

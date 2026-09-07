@@ -1,4 +1,5 @@
 import React, { forwardRef, useEffect, useRef, useCallback } from 'react'
+import { YIcon } from '../icon'
 
 export interface DialogProps {
   open?: boolean
@@ -100,7 +101,7 @@ const YDialog = forwardRef<HTMLDivElement, DialogProps>(
                   aria-label="Close"
                   onClick={onClose}
                 >
-                  ×
+                  <YIcon name="x" size={16} />
                 </button>
               )}
             </div>

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte'
+  import { YIcon } from '../icon'
 
   interface Props {
     type?: 'text' | 'password' | 'email' | 'number' | 'tel' | 'url' | 'search'
@@ -79,7 +80,7 @@
       aria-label="Clear"
       on:click={handleClear}
     >
-      ×
+      <YIcon name="x" size={14} />
     </button>
   {/if}
   {#if $$slots.suffix}

@@ -30,7 +30,8 @@
     "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "@y-ui/core": "workspace:*"
+    "@y-ui/core": "workspace:*",
+    "@y-ui/icons": "workspace:*"
   },
   "devDependencies": {
     "react": "^18.3.0",

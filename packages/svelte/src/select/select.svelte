@@ -1,5 +1,6 @@
 <script lang="ts">
   import { createEventDispatcher, onMount, onDestroy } from 'svelte'
+  import { YIcon } from '../icon'
 
   interface Props<T = any> {
     options: T[]
@@ -128,7 +129,7 @@
         <span class="y-select__placeholder">{placeholder}</span>
       {/if}
     </span>
-    <span class="y-select__arrow" aria-hidden="true">▾</span>
+    <span class="y-select__arrow" aria-hidden="true"><YIcon name="chevron-down" size={16} /></span>
   </button>
   {#if isOpen}
     <div class="y-select__dropdown" role="listbox">

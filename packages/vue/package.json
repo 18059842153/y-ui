@@ -29,7 +29,8 @@
     "vue": ">=3.3.0"
   },
   "dependencies": {
-    "@y-ui/core": "workspace:*"
+    "@y-ui/core": "workspace:*",
+    "@y-ui/icons": "workspace:*"
   },
   "devDependencies": {
     "vue": "^3.5.0",

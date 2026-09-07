@@ -10,7 +10,7 @@ export default defineConfig({
       fileName: (_format, entryName) => `${entryName}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime', '@y-ui/core'],
+      external: ['react', 'react-dom', 'react/jsx-runtime', '@y-ui/core', '@y-ui/icons'],
       output: {
         preserveModules: true,
         preserveModulesRoot: 'src',

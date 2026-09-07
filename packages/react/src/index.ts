@@ -16,6 +16,12 @@ export type { TabsProps, TabItem } from './tabs'
 export { YCard } from './card'
 export type { CardProps } from './card'
 
+export { YIcon } from './icon'
+export type { IconProps } from './icon'
+
+export { YFormField } from './form-field'
+export type { FormFieldProps } from './form-field'
+
 export { useSelect } from './hooks/use-select'
 export type { UseSelectConfig, UseSelectReturn } from './hooks/use-select'
 

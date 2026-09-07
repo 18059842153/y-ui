@@ -1,0 +1,39 @@
+{
+  "name": "@y-ui/form-vue",
+  "version": "0.1.0",
+  "description": "vee-validate adapter for Y-UI Vue components",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@y-ui/form-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "vue": ">=3",
+    "vee-validate": ">=4",
+    "@y-ui/vue": "workspace:*"
+  },
+  "devDependencies": {
+    "vue": "^3.5.0",
+    "vee-validate": "^4.14.0",
+    "@y-ui/vue": "workspace:*",
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.3.0",
+    "typescript": "^5.5.0"
+  }
+}

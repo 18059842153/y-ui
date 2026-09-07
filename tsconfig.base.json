@@ -22,8 +22,6 @@
       "@y-ui/tokens/*": ["./packages/tokens/src/*"],
       "@y-ui/hooks": ["./packages/hooks/src"],
       "@y-ui/hooks/*": ["./packages/hooks/src/*"],
-      "@y-ui/icons": ["./packages/icons/src"],
-      "@y-ui/icons/*": ["./packages/icons/src/*"],
       "@y-ui/uno-preset": ["./packages/uno-preset/src"],
       "@y-ui/uno-preset/*": ["./packages/uno-preset/src/*"],
       "@y-ui/react": ["./packages/react/src"],

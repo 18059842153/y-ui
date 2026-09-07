@@ -1,4 +1,5 @@
 import React, { forwardRef, useState, useCallback, useRef, useEffect } from 'react'
+import { YIcon } from '../icon'
 
 export interface SelectProps<T = any> {
   options: T[]
@@ -153,7 +154,7 @@ function YSelectInner<T = any>(
           )}
         </span>
         <span className="y-select__arrow" aria-hidden="true">
-          ▾
+          <YIcon name="chevron-down" size={16} />
         </span>
       </button>
       {isOpen && (

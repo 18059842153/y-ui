@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "paths": {
+      "@y-ui/vue": ["../vue/dist/index.d.ts"],
+      "@y-ui/vue/*": ["../vue/dist/*"],
+      "@y-ui/form-core": ["../form-core/dist/index.d.ts"],
+      "@y-ui/form-core/*": ["../form-core/dist/*"]
+    }
+  },
+  "include": ["src"]
+}

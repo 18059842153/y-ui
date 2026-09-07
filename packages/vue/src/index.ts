@@ -15,3 +15,9 @@ export type { TabsProps, TabItem } from './tabs'
 
 export { YCard } from './card'
 export type { CardProps } from './card'
+
+export { YIcon } from './icon'
+export type { IconProps } from './icon'
+
+export { YFormField } from './form-field'
+export type { FormFieldProps } from './form-field'

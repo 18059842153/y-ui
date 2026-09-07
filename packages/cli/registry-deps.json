@@ -1,0 +1,10 @@
+{
+  "button": [],
+  "input": ["icon"],
+  "select": ["icon"],
+  "dialog": ["icon"],
+  "tabs": [],
+  "card": [],
+  "icon": [],
+  "form-field": []
+}

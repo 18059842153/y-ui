@@ -32,7 +32,8 @@
     "svelte": ">=4.0.0"
   },
   "dependencies": {
-    "@y-ui/core": "workspace:*"
+    "@y-ui/core": "workspace:*",
+    "@y-ui/icons": "workspace:*"
   },
   "devDependencies": {
     "svelte": "^4.2.0",

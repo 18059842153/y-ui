@@ -17,7 +17,7 @@ export default defineConfig({
       fileName: (_format, entryName) => `${entryName}.js`,
     },
     rollupOptions: {
-      external: ['vue', '@y-ui/core'],
+      external: ['vue', '@y-ui/core', '@y-ui/icons'],
       output: {
         preserveModules: true,
         preserveModulesRoot: 'src',

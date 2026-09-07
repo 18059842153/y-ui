@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "jsx": "react-jsx",
+    "paths": {
+      "@y-ui/react": ["../react/dist/index.d.ts"],
+      "@y-ui/react/*": ["../react/dist/*"],
+      "@y-ui/form-core": ["../form-core/dist/index.d.ts"],
+      "@y-ui/form-core/*": ["../form-core/dist/*"]
+    }
+  },
+  "include": ["src"]
+}

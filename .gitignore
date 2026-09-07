@@ -2,6 +2,7 @@ node_modules/
 dist/
 .turbo/
 *.local
+*.tsbuildinfo
 .DS_Store
 *.log
 .env
@@ -9,4 +10,4 @@ dist/
 coverage/
 .idea/
 .vscode/
-*.tsbuildinfo
+packages/cli/registry.json
