@@ -36,7 +36,7 @@ export function resolveDependencies(
   return [...resolved.values()]
 }
 
-export function validateComponentNames(names: string[]): string[] {
-  const reg = loadRegistry()
+export function validateComponentNames(names: string[], registry?: Registry): string[] {
+  const reg = registry ?? loadRegistry()
   return names.filter((n) => !(n in reg.components))
 }

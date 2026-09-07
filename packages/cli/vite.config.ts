@@ -15,7 +15,7 @@ export default defineConfig({
     },
   },
   plugins: [
-    dts({ skipDiagnostics: true, include: ['src'] }),
+    dts({ skipDiagnostics: true, include: ['src'], exclude: ['src/**/*.test.ts'] }),
     {
       name: 'shebang',
       renderChunk(code) {

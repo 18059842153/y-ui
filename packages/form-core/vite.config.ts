@@ -10,5 +10,5 @@ export default defineConfig({
       fileName: 'index',
     },
   },
-  plugins: [dts({ skipDiagnostics: true, include: ['src'] })],
+  plugins: [dts({ skipDiagnostics: true, include: ['src'], exclude: ['src/**/*.test.ts'] })],
 })

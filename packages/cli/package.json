@@ -16,6 +16,7 @@
     "build": "vite build",
     "dev": "vite build --watch",
     "typecheck": "tsc --noEmit",
+    "test": "vitest run",
     "clean": "rm -rf dist"
   },
   "dependencies": {
@@ -27,6 +28,7 @@
     "@types/prompts": "^2.4.9",
     "vite": "^5.4.0",
     "vite-plugin-dts": "^4.3.0",
-    "typescript": "^5.5.0"
+    "typescript": "^5.5.0",
+    "vitest": "^2.1.0"
   }
 }
